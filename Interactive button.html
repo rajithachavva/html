@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <nav id="sidebar" style="width: 250px; float: left; background-color: #333; color: white; padding: 20px; height: 100vh;">
+    <ul>
+      <li><a href="#" style="color: white; text-decoration: none;">Dashboard</a></li>
+      <li><a href="#" style="color: white; text-decoration: none;">User Management</a></li>
+      <li><a href="#" style="color: white; text-decoration: none;">Analytics</a></li>
+      <li><a href="#" style="color: white; text-decoration: none;">Settings</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div id="main-content" style="margin-left: 270px; padding: 20px;">
+    <!-- Dashboard Header -->
+    <header>
+      <h1>Admin Dashboard</h1>
+      <div style="text-align: right;">
+        <span>Welcome, Admin</span> &nbsp; <button>Logout</button>
+      </div>
+    </header>
+
+    <!-- Analytics Section -->
+    <section id="analytics">
+      <h2>Analytics Overview</h2>
+      <div style="width: 100%; height: 300px; background-color: #f4f4f4; margin-bottom: 20px;">
+        <p>Chart Placeholder (Sales Data)</p>
+      </div>
+      <div style="width: 100%; height: 300px; background-color: #f4f4f4;">
+        <p>Chart Placeholder (User Growth)</p>
+      </div>
+    </section>
+
+    <!-- User Data Section -->
+    <section id="user-data" style="margin-top: 40px;">
+      <h2>User Data</h2>
+      <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px;">
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>Active</td>
+            <td><button>Edit</button><button>Delete</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+            <td>Inactive</td>
+            <td><button>Edit</button><button>Delete</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Michael Brown</td>
+            <td>michaelb@example.com</td>
+            <td>Active</td>
+            <td><button>Edit</button><button>Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Admin Controls Section -->
+    <section id="form-controls" style="margin-top: 40px;">
+      <h2>Admin Controls</h2>
+      <form>
+        <label for="new-user-name">New User Name:</label>
+        <input type="text" id="new-user-name" name="new-user-name" placeholder="Enter name" style="width: 100%; padding: 10px; margin: 5px 0;">
+        
+        <label for="new-user-email">New User Email:</label>
+        <input type="email" id="new-user-email" name="new-user-email" placeholder="Enter email" style="width: 100%; padding: 10px; margin: 5px 0;">
+        
+        <label for="user-status">User Status:</label>
+        <select id="user-status" name="user-status" style="width: 100%; padding: 10px; margin: 5px 0;">
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+        </select>
+
+        <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Add User</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>
